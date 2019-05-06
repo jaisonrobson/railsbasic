@@ -9,17 +9,7 @@
 </p>
 
 <h2>Comentarios</h2>
-<% @article.comments.each do |comment| %>
-  <p>
-    <strong>Autor:</strong>
-    <%= comment.commenter %>
-  </p>
-
-  <p>
-    <strong>Comentario:</strong>
-    <%= comment.body %>
-  </p>
-<% end %>
+<%= render @article.comments %>
 
 <h2>Adicione um comentario:</h2>
 <%=
